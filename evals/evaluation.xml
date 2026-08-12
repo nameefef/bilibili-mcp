@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation>
+  <qa_pair><question>Which tool parses a BV identifier without contacting Bilibili?</question><answer>bilibili_parse_url</answer></qa_pair>
+  <qa_pair><question>Which environment variable contains the application secret?</question><answer>BILIBILI_APP_SECRET</answer></qa_pair>
+  <qa_pair><question>Which scope is required to get the authorized user's public profile?</question><answer>USER_INFO</answer></qa_pair>
+  <qa_pair><question>Which scope is required to list the authorized user's videos?</question><answer>ARC_BASE</answer></qa_pair>
+  <qa_pair><question>Which scope is required to read video statistics?</question><answer>ARC_DATA</answer></qa_pair>
+  <qa_pair><question>What is the maximum supported page size for bilibili_list_videos?</question><answer>50</answer></qa_pair>
+  <qa_pair><question>Which MCP transport does the server use?</question><answer>stdio</answer></qa_pair>
+  <qa_pair><question>What signature algorithm is used for official Open Platform requests?</question><answer>HMAC-SHA256</answer></qa_pair>
+  <qa_pair><question>Can bilibili_get_video read an arbitrary public video?</question><answer>No</answer></qa_pair>
+  <qa_pair><question>What is the minimum supported Node.js major version?</question><answer>20</answer></qa_pair>
+</evaluation>

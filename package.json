@@ -1,0 +1,46 @@
+{
+  "name": "bilibili-mcp-server",
+  "version": "0.1.0",
+  "description": "A compliance-first MCP server for Bilibili's official Open Platform APIs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bilibili-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "pnpm run build && pnpm run test",
+    "prepublishOnly": "pnpm run check"
+  },
+  "keywords": [
+    "bilibili",
+    "mcp",
+    "model-context-protocol",
+    "open-platform"
+  ],
+  "author": "nameefef, with OpenAI Codex",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "packageManager": "pnpm@11.16.0"
+}
